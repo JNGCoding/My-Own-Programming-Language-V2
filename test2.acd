@@ -1,0 +1,5 @@
+comment Create a STRING variable
+
+make STRING task
+store task
+call SYSTEM $task
