@@ -1,0 +1,42 @@
+comment We are creating a program where we will take 5 arguments and calculate the sum and average.
+make number A
+make number B
+make number C
+make number D
+make number E
+
+make string continue_ans
+
+call PRINT "INPUT A : "
+store A
+
+call PRINT "INPUT B : "
+store B
+
+call PRINT "INPUT C : "
+store C
+
+call PRINT "INPUT D : "
+store D
+
+call PRINT "INPUT E : "
+store E
+
+let number result $A
+add result $B
+add result $C
+add result $D
+add result $E
+
+call PRINT "SUM : "
+call PRINTLN $result
+
+call PRINT "AVERAGE : "
+div result 5
+
+call PRINTLN $result
+
+call PRINT "Continue? (Y/N) : "
+store continue_ans
+if continue_ans == Y 9
+end_program
